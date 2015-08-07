@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family:"Baskerville", "Times New Roman", serif;
+}
+
+#container {
+/*	width:1000px;
+	position:absolute;
+	left:8px;
+	margin: auto;
+	margin-left:0px;
+	top: 5px; */
+	
+	margin: 2% auto;
+	max-width: 1200px;
+}
+
+header {
+	width: 90%;
+	margin: 0 auto;	
+}
+
+.banner-image {
+	max-width: 100%;
+}
+
+#banner {
+	text-align: center;
+	vertical-align:text-bottom;
+}
+
+.bannerText {
+	font-size:1.2em;
+	font-weight:bold;
+	line-height:0.8em;
+	color:#571c1c;
+	text-align:center;
+}
+
+
+h1 {
+	font-size: 1.8em;
+}
+
+
+h2 {
+	/*  margin-bottom: -15px;
+	padding-right: 150px;   */
+	margin-bottom: 0;
+}
+
+
+#left-sidebar {
+	width: 20%;
+	float: left;
+	padding: 2%;
+}
+
+nav {
+	list-style-type:none;
+	margin-bottom: 2%;
+	padding:0px;
+}
+
+nav ul {
+	/*list-style-type: none;
+	margin:0px 0px 15px 10px;
+	padding:0px;
+	padding-left:10px;  */
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	margin-bottom: 2.5%;	
+}
+
+a, a:link, nav a  {
+	text-decoration: none;
+	font-weight: bold;
+	color:#ae4617;
+}
+
+a:hover, a:active {
+	color:#571c1c;
+}
+
+.contact-top, .contact-bottom {
+	margin: 0;
+	padding: 0;
+	float: none;	
+}
+
+
+#content {
+	float: left;
+	width: 67%;
+	padding: 2%;
+}
+
+#content p {
+	text-align:justify;
+	margin: 0 0 5% 0;
+}
+
+.home-list {
+	list-style: none;	
+}
+
+
+.tuning-image {
+	max-width: 100%;
+	margin: 0 auto;	
+}
+
+.multiline li {
+	list-style:square;
+	margin-bottom: 1%;
+}
+
+
+.grand-piano, .upright-piano {
+	width: 50%;
+	text-align: left;	
+	float: left;
+	
+}
+
+img {
+	max-width: 100%;	
+}
+
+
+.grand-action, .upright-action {
+	width: 80%;
+	padding: 0;
+
+}
+
+
+
+p.caption {
+    color: Black;
+    font-size: 0.8em;
+    font-weight: bold;
+	margin-bottom: 0;
+	text-align: left;
+}
+
+
+.serial-text {
+	width: 74%;
+	float: left;	
+	padding-right: 3%;
+}
+
+.serial-image {
+	width: 23%;
+	float: left;	
+}
+
+.links {
+	list-style: none;	
+}
+
+
+.group:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+
+/*
+#nav {  float:left;  width:370px;  padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  padding-left: 10px;  }
+
+img {  border: none;}
+*/
+
+
+
+
+/*    -----------------------------------------------------------------     */
+/*                ****Media Queries - For Responsive****                    */
+/*        Everything above this applies to screens at least 950px wide     */
+
+
+
+@media screen and (max-width: 950px) {
+	#left-sidebar {
+		width: 25%;
+	}
+	
+	#content {
+		width: 62%;
+	}
+	
+	.grand-piano img, .upright-piano img {
+		max-width: 90%;	
+	}
+
+	
+
+}
+
+
+@media screen and (max-width: 750px) {
+	nav {
+		text-align: center;	
+	}
+	
+	nav ul a {
+		font-size: 1.4em;
+		margin-bottom: 7%;	
+	}
+	
+	#left-sidebar {
+		float: none;
+		width: 90%;
+		margin: 0 auto 5% auto;	
+	}
+	
+	.contact-top, .contact-bottom {
+		float: left;
+		width: 42%;
+		padding: 2%;	
+	}
+	
+	.contact-top {
+		text-align: right;	
+	}
+	
+	.contact-bottom {
+		text-align: center;
+		padding-left: 5%;	
+	}
+	
+	#content {
+		float: none;	
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.contact-top {
+		text-align: left;
+		width: 50%;	
+	}
+	
+	.contact-bottom {
+		width: 37%;	
+	}
+	
+	.contact-bottom img {
+		max-width: 100%; 
+	}
+	
+	.multiline li {
+		margin-bottom: 2.5%;
+	}
+	
+	.serial-text {
+		width: 100%;
+		float: none;
+	}	
+	
+	.serial-image {
+		float: none;
+		width: 80%;
+		text-align: left;	
+	}
+	
+
+	
+}
